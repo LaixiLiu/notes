@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C/预处理.md",
+                "file": "C/gcc.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "C/预处理.md",
+                "file": "C/gcc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "C/预处理.md",
+                "file": "C/gcc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "C/预处理.md"
+                "file": "C/gcc.md"
               }
             }
           },
@@ -166,8 +166,8 @@
   },
   "active": "2f002ef45e5e29ce",
   "lastOpenFiles": [
-    "C/链接属性.md",
     "C/作用域.md",
+    "C/链接属性.md",
     "C/预处理.md",
     "C/gcc.md",
     "C",
