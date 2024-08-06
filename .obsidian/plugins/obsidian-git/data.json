@@ -1,7 +1,7 @@
 {
   "commitMessage": "vault backup: {{date}}",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
-  "autoSaveInterval": 15,
+  "autoSaveInterval": 0,
   "autoPushInterval": 0,
   "autoPullInterval": 0,
   "autoPullOnBoot": true,
@@ -27,7 +27,7 @@
   "submoduleRecurseCheckout": false,
   "gitDir": "/home/laxity/Project/notes/.git",
   "showFileMenu": true,
-  "authorInHistoryView": "initials",
+  "authorInHistoryView": "full",
   "dateInHistoryView": true,
   "lineAuthor": {
     "show": false,

@@ -144,9 +144,17 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
+          },
+          {
+            "id": "4648131caf48847a",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -166,9 +174,9 @@
   },
   "active": "2f002ef45e5e29ce",
   "lastOpenFiles": [
+    "C/预处理.md",
     "C/作用域.md",
     "C/链接属性.md",
-    "C/预处理.md",
     "C/gcc.md",
     "C",
     "LICENSE"
