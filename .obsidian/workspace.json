@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a7abde77af609276",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "C/IO函数.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -82,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "1e99c4bb32b562a8",
@@ -98,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/VIM.md",
+                "file": "C/IO函数.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/VIM.md",
+                "file": "C/IO函数.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/VIM.md"
+                "file": "C/IO函数.md"
               }
             }
           },
@@ -185,17 +198,20 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "b182e4510e78f4b6",
+  "active": "a7abde77af609276",
   "lastOpenFiles": [
+    "C/作用域.md",
+    "C/预处理.md",
+    "C/IO函数.md",
+    "C/链接属性.md",
+    "Tools/VIM.md",
     "attachments/vi-vim.md",
     "attachments",
     "Tools/GDB.md",
-    "Tools/VIM.md",
     "Tools/attachments/vi-vim-cheat-sheet-sch1.gif",
     "Tools/attachments/Pasted image 20240808143122.png",
     "Tools/attachments/Pasted image 20240808142750.png",
     "Tools/attachments/Pasted image 20240808143007.png",
-    "C/预处理.md",
     "Tools/attachments",
     "Tools/Pasted image 20240808142700.png",
     "attachment/vi-vim-cheat-sheet-sch1.gif",
@@ -204,8 +220,6 @@
     "vi-vim-cheat-sheet-sch1.gif",
     "Tools",
     "Tools/gcc.md",
-    "C/作用域.md",
-    "C/链接属性.md",
     "C",
     "LICENSE"
   ]
