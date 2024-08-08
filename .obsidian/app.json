@@ -1,11 +1,12 @@
 {
   "vimMode": true,
   "newFileLocation": "current",
-  "attachmentFolderPath": "/",
+  "attachmentFolderPath": "./attachments",
   "newLinkFormat": "relative",
   "showUnsupportedFiles": true,
   "showLineNumber": true,
   "smartIndentList": false,
   "livePreview": true,
-  "readableLineLength": true
+  "readableLineLength": true,
+  "promptDelete": false
 }
