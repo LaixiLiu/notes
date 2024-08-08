@@ -23,11 +23,9 @@
             "id": "b182e4510e78f4b6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Tools/VIM.md",
-                "mode": "source",
-                "source": false
+                "file": "Tools/attachments/vi-vim-cheat-sheet-sch1.gif"
               }
             }
           }
@@ -98,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/VIM.md",
+                "file": "Tools/attachments/vi-vim-cheat-sheet-sch1.gif",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/VIM.md",
+                "file": "Tools/attachments/vi-vim-cheat-sheet-sch1.gif",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/VIM.md"
+                "file": "Tools/attachments/vi-vim-cheat-sheet-sch1.gif"
               }
             }
           },
@@ -188,11 +186,11 @@
   "active": "b182e4510e78f4b6",
   "lastOpenFiles": [
     "Tools/attachments/Pasted image 20240808143122.png",
+    "Tools/attachments/Pasted image 20240808142750.png",
+    "Tools/VIM.md",
     "Tools/attachments/Pasted image 20240808143007.png",
     "C/预处理.md",
-    "Tools/VIM.md",
     "Tools/attachments/vi-vim-cheat-sheet-sch1.gif",
-    "Tools/attachments/Pasted image 20240808142750.png",
     "Tools/attachments",
     "Tools/Pasted image 20240808142700.png",
     "Tools/GDB.md",
