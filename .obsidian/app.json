@@ -8,5 +8,6 @@
   "smartIndentList": false,
   "livePreview": true,
   "readableLineLength": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "useMarkdownLinks": true
 }

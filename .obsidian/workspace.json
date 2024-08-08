@@ -23,9 +23,11 @@
             "id": "b182e4510e78f4b6",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Tools/attachments/vi-vim-cheat-sheet-sch1.gif"
+                "file": "Tools/VIM.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -96,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/attachments/vi-vim-cheat-sheet-sch1.gif",
+                "file": "Tools/VIM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/attachments/vi-vim-cheat-sheet-sch1.gif",
+                "file": "Tools/VIM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/attachments/vi-vim-cheat-sheet-sch1.gif"
+                "file": "Tools/VIM.md"
               }
             }
           },
@@ -185,15 +187,17 @@
   },
   "active": "b182e4510e78f4b6",
   "lastOpenFiles": [
+    "attachments/vi-vim.md",
+    "attachments",
+    "Tools/GDB.md",
+    "Tools/VIM.md",
+    "Tools/attachments/vi-vim-cheat-sheet-sch1.gif",
     "Tools/attachments/Pasted image 20240808143122.png",
     "Tools/attachments/Pasted image 20240808142750.png",
-    "Tools/VIM.md",
     "Tools/attachments/Pasted image 20240808143007.png",
     "C/预处理.md",
-    "Tools/attachments/vi-vim-cheat-sheet-sch1.gif",
     "Tools/attachments",
     "Tools/Pasted image 20240808142700.png",
-    "Tools/GDB.md",
     "attachment/vi-vim-cheat-sheet-sch1.gif",
     "attachment",
     "vi-vim-cheat-sheet-sch1 1.gif",
