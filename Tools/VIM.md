@@ -1,4 +1,4 @@
-![Vim键位图](attachments/vi-vim-cheat-sheet-sch1.gif)
+![Vim键位图](./attachments/vi-vim-cheat-sheet-sch1.gif)
 ### Vim常用命令总结
 -    基本移动: hjkl （左， 下， 上， 右）
 -    词： w （下一个词）， b （词初）， e （词尾）
@@ -19,7 +19,7 @@
 ```Vim
 :!ls
 ```
-![](attachments/Pasted%20image%2020240808142750.png)
+![](./attachments/Pasted%20image%2020240808142750.png)
 #### 使用 `:sh` 命令
 
 `:sh` 命令用于启动一个新的 Shell 会话。在新的 Shell 会话中，用户可以执行多条 Shell 命令。输入 `exit` 或按 `Ctrl-D` 可以返回 Vim。
@@ -32,13 +32,13 @@
 ```Vim
 :echo system('ls')
 ```
-![](attachments/Pasted%20image%2020240808143007.png)
+![](./attachments/Pasted%20image%2020240808143007.png)
 #### 使用 `read !` 命令
 `read !` 命令用于将 Shell 命令的输出插入到当前缓冲区的光标所在行之后。
 ```Vim
 :read !ls
 ```
-![](attachments/Pasted%20image%2020240808143122.png)
+![](./attachments/Pasted%20image%2020240808143122.png)
 #### 使用 `:terminal` 命令
 在支持的 Vim 版本（通常是 Vim 8.0 及以上版本）中，可以使用 `:terminal` 命令打开一个嵌入的终端窗口。
 ```Vim
