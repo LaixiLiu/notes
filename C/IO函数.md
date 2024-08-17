@@ -29,6 +29,8 @@ FILE *fopen(const char *pathname, const char *mode);
 - "r+"：以读写模式打开文件。文件必须存在。
 - "w+"：以读写模式打开文件。如果文件不存在则创建，若文件已存在则清空文件内容。
 - "a+"：以读写模式打开文件。如果文件不存在则创建，若文件已存在则从文件末尾开始读写。
+	> `fopen`默认将流视为文本流，在上面的模式字符后面加一个 `"b"`，即可将文件以二进制流模式打开。
+
 **返回值**
 - 成功时返回一个指向 FILE 对象的指针。
 - 失败时返回 NULL，并设置相应的错误码，可以用 perror 或 strerror 进行错误处理。
@@ -147,7 +149,7 @@ int main() {
 }
 ```
 #### 写入
-*函数原型*
+**函数原型**
 ```c
 int fputc(int character, FILE *stream);
 int putc(int character, FILE *stream);
@@ -155,3 +157,29 @@ int putchar(int character);
 ```
 `character`为要打印的字符，函数会将这个`int`类型转换为对应的无符号整形值。
 如果写入失败(如向一个已关闭的流写入)，则返回`EOF`。
+e.g.
+```c
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+    FILE *file = fopen("./test.txt", "w");
+    if (file == NULL) {
+        perror("test.txt");
+        exit(1);
+    }
+    char c = '0';
+    for(; c < '9' && fputc(c, file); c++) ;
+    if(fclose(file) != 0) {
+        perror("fclose");
+        exit(1);
+    }
+    return 0;
+}
+```
+#### 撤销字符I/O
+在读取字符流时，可能需要查看下一个字符来决定如何处理当前输入，但这个字符可能不应该消耗掉。在这种情况下，可以使用 `ungetc` 将字符放回流中。
+**函数原型**
+```c
+int ungetc(int c, FILE *stream);
+```
+`ungetc` 只能在输入流上使用。试图在输出流上使用 `ungetc` 会导致未定义行为。
