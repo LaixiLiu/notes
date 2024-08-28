@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f5eaf9b6c8ec0327",
+        "id": "a34ea06f4c2d50af",
         "type": "tabs",
         "children": [
           {
-            "id": "cedb7ad093dee01c",
+            "id": "104b2cbef81db4c3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Git.md",
+                "file": "PA/RISCV学习笔记.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Git.md",
+                "file": "PA/RISCV学习笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Git.md",
+                "file": "PA/RISCV学习笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Git.md"
+                "file": "PA/RISCV学习笔记.md"
               }
             }
           },
@@ -172,19 +172,25 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "cedb7ad093dee01c",
+  "active": "104b2cbef81db4c3",
   "lastOpenFiles": [
-    "Tools/VIM.md",
-    "Tools/Git.md",
-    "C/预处理.md",
-    "C/String.md",
-    "Docker/Docker Netword.md",
-    "Docker",
-    "Tools/gcc.md",
+    "PA/PA2.md",
+    "PA/RISCV学习笔记.md",
     "Tools/GDB.md",
+    "C/String.md",
     "C/IO函数.md",
-    "C/作用域.md",
+    "Tools/Shell重定向.md",
+    "Tools/gcc.md",
     "C/链接属性.md",
+    "C/作用域.md",
+    "C/inline内联.md",
+    "Tools/Git.md",
+    "PA/PA1.md",
+    "Docker/Docker Netword.md",
+    "C/预处理.md",
+    "PA",
+    "Tools/VIM.md",
+    "Docker",
     "attachments/vi-vim.md",
     "attachments",
     "Tools/attachments/vi-vim-cheat-sheet-sch1.gif",

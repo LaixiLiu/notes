@@ -45,10 +45,51 @@ git sparse-checkout (init | list | set | add | reapply | disable | check-rules) 
 目标：拉取`flexoki`项目下的`gtk/gtk-3.0`与`gtk/gtk-4.0`目录
 实现：
 	1. 克隆仓库但不检出文件：
-		`git clone --nocheckout git@github.com:kepano/flexoki.git`
+		`git clone --no-checkout git@github.com:kepano/flexoki.git`
+		`cd flexoki`
 	2. 启用稀疏检出
 		`git config core.sparseCheckout true`
 	3. 制定要检出的文件夹(要检出的文件应记录在`.git/info/sparse-checkout`文件中)
 		`echo "gtk/gkt-?.0" >> .git/info/sparse-checkout`
 	4. 检出文件
 		`git checkout main`
+```shell
+$: tree -L 2
+.
+└── gtk
+    ├── gtk-3.0
+    └── gtk-4.0
+
+4 directories, 0 files
+```
+## git孤立分支
+`git checkout --orphan` 命令的作用是创建一个**孤立的分支**（orphan branch），这个分支没有父提交。执行该命令后，你会处于一个全新的分支上，而该分支与当前的提交历史完全脱离。
+
+具体作用如下：
+
+1. **创建新分支**：创建一个新的分支，并且该分支没有任何历史记录。
+2. **没有父提交**：新分支是孤立的，也就是没有任何祖先提交记录，因此它从历史上完全脱离。
+3. **适用于重新开始历史**：`git checkout --orphan` 常用于清理项目历史、开始新的项目、或者发布不同版本等场景。
+### Syntax
+```bash
+git checkout --orphan <new-branch-name>
+```
+### Steps
+1. 创建孤立分支：
+```bash
+git checkout --orphan new-branch
+```
+2. 添加文件并提交：
+```bash
+git add .
+git commit -m "Initial commit on orphan branch"
+```
+3. 清理旧的文件（可选）：
+	孤立分支会继承当前工作目录的文件，如果不需要当前文件，可以清空目录：
+```bash
+git rm -rf .
+```
+### 使用场景
+
+- **发布子项目**：当你想发布某个子项目作为独立项目，可以创建孤立分支而不携带整个历史。
+- **重置项目历史**：有时你可能需要清理历史并从头开始，`--orphan` 是一个简单的方式。
