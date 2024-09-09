@@ -5,9 +5,9 @@
   "newLinkFormat": "relative",
   "showUnsupportedFiles": true,
   "showLineNumber": true,
-  "smartIndentList": false,
+  "smartIndentList": true,
   "livePreview": true,
-  "readableLineLength": true,
+  "readableLineLength": false,
   "promptDelete": false,
   "useMarkdownLinks": true
 }

@@ -1,5 +1,6 @@
 {
   "cssTheme": "Minimal",
-  "monospaceFontFamily": "Consolas",
-  "baseFontSizeAction": true
+  "monospaceFontFamily": "MesloLGM Nerd Font Propo,Consolas",
+  "baseFontSizeAction": true,
+  "baseFontSize": 19
 }

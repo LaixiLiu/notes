@@ -4,5 +4,7 @@
   "calendar",
   "table-editor-obsidian",
   "obsidian-outliner",
-  "obsidian-git"
+  "obsidian-git",
+  "cm-chs-patch",
+  "vim-im-select"
 ]

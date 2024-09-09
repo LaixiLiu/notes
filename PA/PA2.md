@@ -124,3 +124,48 @@ result = ffffffffffffff10
 y->a = 00000f10
 result = f10
 ```
+在实现指令的过程中，我们需要注意是否要对imm,src1,src2进行符号扩展。
+## 程序、运行时环境与AM
+### AM
+**通过批处理模式运行NEMU**
+查看`nemu/src/monitor/monitor.c`中的`init_monitor(int argc, char *argv[])`函数，发现由存储命令行所传递参数的字符串数组被传入了函数`parse_args(argc, argv)`中：
+```c
+static int parse_args(int argc, char *argv[]) {
+  const struct option table[] = {
+    {"batch"    , no_argument      , NULL, 'b'},
+    {"log"      , required_argument, NULL, 'l'},
+    {"diff"     , required_argument, NULL, 'd'},
+    {"port"     , required_argument, NULL, 'p'},
+    {"help"     , no_argument      , NULL, 'h'},
+    {0          , 0                , NULL,  0 },
+  };
+  int o;
+  while ( (o = getopt_long(argc, argv, "-bhl:d:p:", table, NULL)) != -1) {
+    switch (o) {
+      case 'b': sdb_set_batch_mode(); break;
+      case 'p': sscanf(optarg, "%d", &difftest_port); break;
+      case 'l': log_file = optarg; break;
+      case 'd': diff_so_file = optarg; break;
+      case 1: img_file = optarg; return 0;
+      default:
+        printf("Usage: %s [OPTION...] IMAGE [args]\n\n", argv[0]);
+        printf("\t-b,--batch              run with batch mode\n");
+        printf("\t-l,--log=FILE           output log to FILE\n");
+        printf("\t-d,--diff=REF_SO        run DiffTest with reference REF_SO\n");
+        printf("\t-p,--port=PORT          run DiffTest with port PORT\n");
+        printf("\n");
+        exit(0);
+    }
+  }
+  return 0;
+}
+```
+`parse_args()`函数负责解析命令行传入参数，当传入`-b`选项时，调用`sdb_set_batch_mode()`函数，将`is_batch_mode`变量置`true`；
+在进入`sdb_mainloop()`后，有一个条件判断：
+```c
+  if (is_batch_mode) {
+    cmd_c(NULL);
+    return;
+  }
+```
+当`is_batch_mode`为`true`时，nemu会直接运行客户程序。
